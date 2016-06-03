@@ -5,7 +5,7 @@ require 'sinatra/activerecord'
 require './environments'
 
 class Device < ActiveRecord::Base
-  self.table_name = 'salesforce.Cariot__Device__c'
+  self.table_name = 'salesforce.cariot__device__c'
 end
 
 get "/devices" do
