@@ -4,6 +4,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require './environments'
 
+
 class Device < ActiveRecord::Base
   self.table_name = 'salesforce.cariot__device__c'
 end
@@ -19,9 +20,6 @@ get "/" do
 end
 
 
-class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
-end
 
 #get "/contacts" do
 #  @contacts = Contact.all
