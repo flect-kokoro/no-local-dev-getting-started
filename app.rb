@@ -4,12 +4,12 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require './environments'
 
-class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
+class Cariot__Device < ActiveRecord::Base
+  self.table_name = 'salesforce.Cariot__Device__c'
 end
 
-get "/contacts" do
-  @contacts = Contact.all
+get "/devices" do
+  @devices = Cariot__Device.all
   erb :index
 end
 
