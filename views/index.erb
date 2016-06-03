@@ -1,6 +1,19 @@
 <div class="container">
 
-  aaa
-  bbb
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>aa</th>
+      <th>bb</th>
+      <th>cc</th>
+    </tr>
+
+    <% @devices.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.id %></td>
+        <td><%= contact.sfid %></td>
+      </tr>
+    <% end %>
+  </table>
 
 </div>
