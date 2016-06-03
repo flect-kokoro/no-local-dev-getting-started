@@ -9,7 +9,7 @@ class Device < ActiveRecord::Base
 end
 
 get "/devices" do
-  @devices = Device.all
+  @devices = cariot__device__c.all
   erb :index
 end
 
