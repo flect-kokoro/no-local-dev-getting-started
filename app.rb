@@ -10,7 +10,7 @@ class Device < ActiveRecord::Base
 end
 
 get "/devices" do
-  @devices = Device.all
+  #@devices = Device.all
   erb :index
 end
 
