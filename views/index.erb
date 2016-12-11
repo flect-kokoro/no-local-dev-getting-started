@@ -4,7 +4,11 @@
     <tr>
       <th>AccountName</th>
     </tr>
-
+    <% @accounts.each do |account| %>
+      <tr>
+        <td><%= account.name %></td>
+      </tr>
+    <% end %>
 
   </table>
 
