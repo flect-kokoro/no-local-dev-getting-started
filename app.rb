@@ -4,6 +4,14 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require './environments'
 
+class Account < ActiveRecord::Base
+  self.table_name = 'salesforce.account'
+end
+
+get "/accounts" do
+  @contacts = Account.all
+  erb :index
+end
 
 class Device < ActiveRecord::Base
   self.table_name = 'salesforce.cariot__device__c'
