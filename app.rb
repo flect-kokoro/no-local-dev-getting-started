@@ -9,16 +9,7 @@ class Account < ActiveRecord::Base
 end
 
 get "/accounts" do
-  @contacts = Account.all
-  erb :index
-end
-
-class Device < ActiveRecord::Base
-  self.table_name = 'salesforce.cariot__device__c'
-end
-
-get "/devices" do
-  @devices = Device.all
+  @accounts = Account.all
   erb :index
 end
 
