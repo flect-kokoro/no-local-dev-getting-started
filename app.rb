@@ -18,6 +18,9 @@ get "/" do
   erb :home
 end
 
+get "/test" do
+  erb :test
+end
 
 
 #get "/contacts" do
